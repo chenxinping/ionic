@@ -1,0 +1,31 @@
+<ion-view id="inform">
+    <ion-header-bar class="bar-dark">
+        <button class="button button-icon icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+        <h2 class="title">{{inn.name}}</h2>
+    </ion-header-bar>
+    <ion-content class="informbg">
+        <ion-list>
+            <ion-item>
+                <div class="namepic"><img ng-src="{{inn.imgsrc}}"></div>
+                <div class="inner">
+                    <h2>{{inn.name}}</h2>
+                    <p>{{inn.job}}</p>
+                    <div class="buttons">
+                        <button class="button">关 注</button>
+                        <button class="button">私 信</button>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <div class="row box">
+            <div class="col col-25">喜欢<p>{{inn.like}}</p></div>
+            <div class="col col-25">推荐<p>{{inn.recommend}}</p></div>
+            <div class="col col-25">关注<p>{{inn.attention}}</p></div>
+            <div class="col col-25">粉丝<p>{{inn.fans}}</p></div>
+        </div>
+        <div class="row">
+            <div class="col col-50"><img ng-src="{{inn.recpic1}}"></div>
+            <div class="col col-50"><img ng-src="{{inn.recpic2}}"></div>
+        </div>
+    </ion-content>
+</ion-view>

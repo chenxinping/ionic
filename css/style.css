@@ -1,0 +1,122 @@
+body{Font-size:62.5%;font-family: "microsoft yahei"}
+button{font-family: "microsoft yahei";}
+h2{font-family: "microsoft yahei";}
+span{font-family: "microsoft yahei";}
+
+/*personal*/
+#mine{height:50%;background: url("../images/01.jpg") top center no-repeat;background-size: 100% 100%;}
+.col-offset-47{margin-left:47%}
+.btn{position: absolute;right:0;top:0.4em;}
+.button.lodbtn{padding: 0 2.5em;background: #6f98c3;}
+.rowimg{padding: 1.5em 0.5em;}
+.button-outline.ddbtn{border-color:#fff;color:#efefef;}
+.mess{text-align: center;height:20vh;padding-top: 6vh;font-size: 2em;cursor: pointer;border-right:1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;}
+.i_icon{font-size: 2.5em;color:#6f98c3;}
+.i_icon_m{border-right:none;}
+.i_icon_ke{border-right:none;border-bottom:none;}
+.i_icon_di{border-bottom: none;}
+
+/*home*/
+.bar.bar-dark{border-color:#1a1a1a;background-color:#1a1a1a;}
+.box{width: 100%;}
+.box > img{width:100%;}
+.pad{padding:0;margin-top: -1%;}
+.pad2{padding:0;}
+.pad2>img{width:100%;height:100.1%;}
+.col-50 > img{width:100%}
+.mar_t{margin-top: -15.2%;}
+.badge.badge-assertive.badbg{background: #78a5c4;position: absolute;right:0;top:0;padding: 0 4px;font-size: 0.3em;}
+/*tabs*/
+.tabs{height:6em;padding: 1em 0;}
+.tabs-dark>.tabs, .tabs.tabs-dark{border-color:#1a1a1a;background-color:#1a1a1a;}
+
+/*cart*/
+#cart .pic{float: left;width:40%;float: left}
+#cart .text{padding: 10px;width:60%;float: right;}
+#cart img{width:100%;vertical-align:middle;}
+#cart .in span{color:#6c94bd;float: left;font-size: 1.3em;line-height: 1.3em;}
+#cart p{color:#4c4e51;text-overflow:ellipsis; white-space: nowrap;overflow: hidden;display:block;font-size: 1.3em;line-height: 1.3em;}
+#cart .text .in .p{float: right;color:#9b9c9c;}
+#cart .item{border-color:#1f2429;}
+#cart .item-content{background:#1f2429;}
+ion-content.scroll-content{background:#141a1c;}
+ion-item.item{background: #242629;color:#9b9c9c;}
+ion-item .assertive{color:#a22228;}
+ion-item .bao{color:#927e4a;}
+ion-item .exp{color:#6e94c0;}
+#cartf .bar-footer{height:72px;background: #2b547a;}
+#cartf .f_left{padding-left: 20px;padding-top:10px;font-size: 2em;}
+#cartf .f_left span{font-size: 0.8em;color:#6a93bd;}
+#cartf .f_right{position: absolute;right:0;bottom:0;}
+#cartf .f_right button{height:72px;padding:0 25px;font-size: 2em;background:#5985ad;}
+#cartf .bar_bar{padding:0;}
+.button.button-full{margin-bottom:0;}
+#qian{position: absolute;bottom:70px;left:0;width:100%;}
+#qian .item{border-color:#242629;}
+
+/*category*/
+#cate ion-content.catebg{background: #222426;}
+#cate .catebg img{width:100%;}
+#cate .item{border-color: transparent;padding:0;}
+#cate .item .date{text-align: center;line-height: 3.2em;margin-top: -7px;color:#6f98c3;background: #222426;}
+#cate .item-complex .item-content{padding:0;background: #222426;}
+
+/*detail*/
+#detail .detbg{color:#333;background: #fff;}
+#detail .detbg img{width:100%}
+#detail .detbg .tab{padding:1.5em;}
+#detail .detbg .tab span,#detail .detbg .tab p{font-size: 2em;}
+#detail .detbg .tab p{margin-top: 1.2em;line-height: 2em;}
+
+/*muji*/
+#mujiCard .zi{font-size: 2em;}
+#mujiCard span{line-height:3em;overflow: hidden;width:50%;display: inline-block;text-overflow:ellipsis; white-space: nowrap;}
+#mujiCard button{color:#78a5c4;float:right;}
+#mujiCard .item{line-height:1.5em;}
+#mujiCard .cartbtn{background: #78a5c4;color:#fff;}
+#mujiCard .box{float: left;width:48%;margin: 0 3px;padding-bottom: 5px;}
+#mujiCard .bg{background: #32363a;}
+#top{width: 30px;height:30px;line-height: 30px;text-align: center;border-radius: 50%;background: #78a5c4;color: #fff;position: absolute;bottom: 100px;right: 10px;z-index: 10;opacity: 0.6;cursor: pointer;}
+
+/*master*/
+#master .information{float: left;width:32%;margin: 0 0.5%;padding-bottom: 1%;text-decoration:none;}
+#master .information img{width:100%;}
+#master .information p{color:#ccc;overflow: hidden;text-overflow:ellipsis; white-space: nowrap;font-size: 1.8em;padding-top: 0.6em;}
+#master .information .info_p{color:#878989;overflow: hidden;text-overflow:ellipsis; white-space: nowrap;font-size: 1.5em;}
+
+/*information*/
+#inform .informbg{background: #2d2f32;}
+#inform .informbg .item{border: none;background: #2d2f32;}
+#inform .informbg .namepic{float: left;width:48%;padding-right: 0.5em;}
+#inform .informbg .namepic >img {width: 100%;}
+#inform .informbg .inner{padding: 0.5em;}
+#inform .informbg .inner h2{color:#c4c4c5;padding-bottom: 0.5em;font-size: 1.5em;overflow: hidden;text-overflow:ellipsis; white-space: nowrap;}
+#inform .informbg .inner p{font-size: 1em;padding-bottom: 0.5em;}
+#inform .informbg .inner .buttons{position: absolute;right:3vw;top:16vh;}
+#inform .informbg .inner .buttons .button{border-radius: 0;padding: 0 1em;}
+#inform .informbg .inner .buttons button:nth-child(1){background: #575b61;color:#fff;}
+#inform .informbg .inner .buttons button:nth-child(2){background: #464749;color:#fff;}
+#inform .informbg .box{color:#fff;font-size: 1.5em;text-align: center;background: #464749;margin: 0 10px;width:98%;margin-bottom: 1em;}
+#inform .informbg .box .col{border-left:1px solid #5a5d61;border-right: 1px solid #5a5d61;}
+#inform .informbg .box .col:nth-child(2){background: #ccc;color:#333;}
+
+/*share*/
+#share .scroll-content{padding: 10px;}
+#share .share_left a > img,#share .share_right a > img{width:100%;}
+#share .share_left a,#share .share_right a{margin-bottom: 10px;}
+#share .share_left{width:49%;float: left;}
+#share .share_right{width:49%;float:right;}
+
+/*shareDetail*/
+#shareDetail .scroll{text-align: center;padding:20px;color:#c2c2c2;font-size: 2em;}
+#shareDetail .scroll img{width:70%;padding-bottom:25px;}
+#shareDetail .scroll p,#shareDetail .scroll .txt{text-align: left;}
+#shareDetail .scroll .txt{height:35px;padding: 20px 0;}
+#shareDetail .scroll .txt span{float: left;}
+#shareDetail .scroll .txt i{float: right;}
+#shareDetail .scroll button{text-align: left;display: block;margin: 25px 0 ;background: #444950;border: none;color:#fff;padding: 5px 15px;}
+#shareDetail .scroll .box{background: #303840;padding: 16px 0;position: absolute;bottom:-5%;left:2.5%;width:95%;}
+
+
+
+

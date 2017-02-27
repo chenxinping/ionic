@@ -1,0 +1,68 @@
+<ion-view>
+    <ion-header-bar class="bar-dark">
+        <button class="button button-clear icon ion-ios-search light"></button>
+        <div class="title">商店</div>
+        <button class="button button-clear icon ion-ios-cart-outline" ui-sref="cart">
+            <span class="badge badge-assertive badbg" ng-show="count()>=1">{{count()}}</span>
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2500" show-pager="true">
+            <ion-slide>
+                <div class="box"><img src="images/ban_01.jpg"/> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/ban_02.jpg"/> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/ban_03.jpg"/> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/ban_04.jpg"/> </div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="row pad">
+            <div class="col col-50 pad">
+                <img src="images/pic_02.jpg" ui-sref="tabs.muji"/>
+            </div>
+            <div class="col col-50 pad">
+                <img src="images/pic_03.jpg" ui-sref="tabs.category"/>
+            </div>
+        </div>
+        <div class="row pad">
+            <div class="col col-50 pad">
+                <img src="images/pic_05.jpg" ui-sref="tabs.category"/>
+            </div>
+            <div class="col col-50 pad mar_t">
+                <img src="images/pic_04.jpg" ui-sref="tabs.muji"/>
+            </div>
+        </div>
+        <div class="row pad2">
+            <div class="col pad2">
+                <img src="images/pic_2_02.jpg" ui-sref="tabs.muji"/>
+            </div>
+        </div>
+        <div class="row pad2">
+            <div class="col col-50 pad2">
+                <img src="images/pic_2_03.jpg" ui-sref="tabs.category"/>
+            </div>
+            <div class="col col-50 pad2">
+                <img src="images/pic_2_04.jpg" ui-sref="tabs.category"/>
+            </div>
+        </div>
+        <div class="row pad2">
+            <div class="col pad2">
+                <img src="images/pic_3_02.jpg" ui-sref="tabs.muji"/>
+            </div>
+        </div>
+        <div class="row pad2">
+            <div class="col col-50 pad2">
+                <img src="images/pic_3_03.jpg" ui-sref="tabs.category"/>
+            </div>
+            <div class="col col-50 pad2">
+                <img src="images/pic_3_04.jpg" ui-sref="tabs.category"/>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

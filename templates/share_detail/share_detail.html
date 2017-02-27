@@ -1,0 +1,19 @@
+<ion-view id="shareDetail">
+    <ion-header-bar class="bar-dark">
+        <button class="button button-icon icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+        <h2 class="title">良品</h2>
+        <button class="button button-clear icon ion-share"></button>
+    </ion-header-bar>
+    <ion-content>
+        <img ng-src="{{book.imgsrc}}"/>
+        <p>{{book.name}}</p>
+        <div class="txt icon-right">
+            <span>{{book.price|currency:"¥"}}</span>
+            <i class="icon ion-heart"> {{book.collection}}</i>
+        </div>
+        <button>LINK</button>
+        <div class="box">
+            <i class="icon ion-clipboard"> 写点什么</i>
+        </div>
+    </ion-content>
+</ion-view>

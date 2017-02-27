@@ -1,0 +1,27 @@
+<ion-view id="detail">
+    <ion-header-bar class="bar-dark">
+        <button class="button button-icon icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+        <h2 class="title">良仓杂志</h2>
+        <div class="buttons">
+            <button class="button button-clear icon ion-ios-heart-outline"></button>
+                <button class="button button-clear icon ion-share" style="padding-left: 15px;"></button>
+        </div>
+    </ion-header-bar>
+    <ion-content class="detbg">
+        <img ng-src="{{book.imgsrc}}">
+        <div class="tab">
+            <h2 class="title">{{book.text}}</h2>
+            <span class="tab_span">作者:{{book.by}}</span>
+            <p>{{book.p1}}</p>
+            <p>{{book.p2}}</p>
+            <p>{{book.p3}}</p>
+            <p>{{book.p4}}</p>
+            <p>{{book.p5}}</p>
+            <p>{{book.p6}}</p>
+            <p>{{book.p7}}</p>
+            <p>{{book.p8}}</p>
+            <p>{{book.p9}}</p>
+            <p>{{book.p10}}</p>
+        </div>
+    </ion-content>
+</ion-view>

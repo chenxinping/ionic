@@ -1,0 +1,15 @@
+<ion-view id="cate">
+    <ion-header-bar class="bar-dark">
+        <div class="title">杂志 <i class="icon ion-ios-arrow-down"></i></div>
+    </ion-header-bar>
+    <ion-content class="catebg has-header">
+        <ion-list>
+            <ion-item ng-repeat="restaurant in restaurants" href="#/tabs/detail?text={{restaurant.text}}">
+                <div class="date"> —&nbsp&nbsp {{restaurant.date}}&nbsp&nbsp — </div>
+                <img ng-src="{{restaurant.imgsrc.img}}"/>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll on-infinite="getRestaurants()" ng-if="total>page" immediate-check="false"></ion-infinite-scroll>
+    </ion-content>
+    <div id="top" ng-show="show()" ng-click="top()" class="icon ion-chevron-up"></div>
+</ion-view>

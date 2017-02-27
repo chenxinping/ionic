@@ -1,0 +1,52 @@
+<ion-view id="cartf">
+    <ion-header-bar class="bar-dark">
+        <button class="button button-icon icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+        <h2 class="title">购物车</h2>
+        <button class="button button-clear" ng-click="config.showDelete=!config.showDelete;">编辑</button>
+    </ion-header-bar>
+    <ion-content id="cart">
+        <ion-list class="cartbg">
+            <ion-item class="item-remove-animate" ng-repeat="item in cart">
+                <div class="pic">
+                    <img ng-src="{{item.product.imgsrc}}"/>
+                </div>
+                <div class="text">
+                    <p>{{item.product.title}}</p>
+                    <p>颜色:{{item.product.color}}</p>
+                    <div class="in">
+                        <span>{{item.product.price|currency:"¥"}}</span>
+                        <p class="p">{{item.number}}</p>
+                    </div>
+                </div>
+                <ion-option-button class="button" style="background: #6e99c2;color:#fff;" ng-click="remove(item.product.title)">删除</ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <ion-list id="qian">
+        <ion-item class="item-icon-left">
+            <i class="icon ion-bookmark assertive"></i>满减
+            <div class="item-note">-¥0.00</div>
+        </ion-item>
+        <ion-item class="item-icon-left">
+            <i class="icon ion-ios-pricetags assertive"></i>折扣
+            <div class="item-note">-¥0.00</div>
+        </ion-item>
+        <ion-item class="item-icon-left">
+            <i class="icon ion-bag bao"></i>包装
+            <div class="item-note">+¥0.00</div>
+        </ion-item>
+        <ion-item class="item-icon-left">
+            <i class="icon ion-android-bus exp"></i>运费
+            <div class="item-note">+¥0.00</div>
+        </ion-item>
+    </ion-list>
+    <ion-footer-bar class="bar_bar">
+        <div class="f_left stable">
+            <p>总计:{{money()|currency:"¥"}}</p>
+            <span>已节省:00.00</span>
+        </div>
+        <div class="f_right">
+            <button class="button button-full stable">结 算</button>
+        </div>
+    </ion-footer-bar>
+</ion-view>

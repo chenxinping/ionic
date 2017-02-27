@@ -1,0 +1,34 @@
+<ion-view>
+    <ion-header-bar class="bar-dark">
+        <button class="button button-icon icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+        <h2 class="title">商店</h2>
+        <button class="button button-icon icon ion-ios-cart-outline" ui-sref="cart">
+            <span class="badge badge-assertive badbg" ng-show="count()>=1">{{count()}}</span>
+        </button>
+    </ion-header-bar>
+    <ion-content style="top:34px;background: #1e2125;">
+        <button class="button  button-full" style="background: #fff;padding: 0 2em">
+            <i style="float: left;">价格筛选</i><i class="icon icon-right ion-chevron-down" style="float: right;"></i>
+        </button>
+        <div class="row" id="mujiCard">
+            <div class="col">
+                <div class="box" ng-repeat="muji in mujis">
+                    <div class="item item-image">
+                        <img ng-src="{{muji.imgsrc}}"/>
+                    </div>
+                    <div class="list">
+                        <div class="item item-borderless bg zi" style="color:#ccc;">{{muji.title}}</div>
+                        <div class="item item-borderless bg zi" style="padding:0 16px;color:#565b60;">
+                            <span>{{muji.by}}</span><button class="button button-clear icon ion-heart "> {{muji.collection}}</button>
+                        </div>
+                        <div class="item item-borderless bg zi" style="color:#78a5c4;">
+                            {{muji.price|currency:"￥"}}<button class="button cartbtn" ng-click="add(muji)">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ion-infinite-scroll on-infinite="getRestaurants()" ng-if="total>page" immediate-check="false"></ion-infinite-scroll>
+    </ion-content>
+    <div id="top" ng-show="show()" ng-click="top()" class="icon ion-chevron-up"></div>
+</ion-view>
